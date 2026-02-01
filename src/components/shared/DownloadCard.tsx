@@ -26,10 +26,10 @@ export function DownloadCard({
     >
       <div className="flex items-start gap-4">
         <div className="p-4 bg-secondary rounded-lg shrink-0">
-          <FileText className="w-8 h-8 text-white" />
+          <FileText className="w-8 h-8 text-foreground" />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-semibold text-white mb-1">{title}</h3>
+          <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
           <p className="text-sm text-muted-foreground mb-4">{description}</p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
             <span className="font-mono">{fileName}</span>
