@@ -1,0 +1,15 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { Problem } from "./Problem";
+export { Pillars } from "./Pillars";
+export { AnalyticsComparison } from "./AnalyticsComparison";
+export { ServerSideStats } from "./ServerSideStats";
+export { ConsentOptimization } from "./ConsentOptimization";
+export { CapabilityMatrix } from "./CapabilityMatrix";
+export { TechStack } from "./TechStack";
+export { AIActCompliance } from "./AIActCompliance";
+export { Regulations } from "./Regulations";
+export { Resources } from "./Resources";
+export { WhyUs } from "./WhyUs";
+export { Contact } from "./Contact";
+export { Footer } from "./Footer";
