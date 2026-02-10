@@ -1,0 +1,159 @@
+country,law_id,region
+Austria,gdpr,Europe
+Belgium,gdpr,Europe
+Bulgaria,gdpr,Europe
+Croatia,gdpr,Europe
+Cyprus,gdpr,Europe
+Czech Republic,gdpr,Europe
+Denmark,gdpr,Europe
+Estonia,gdpr,Europe
+Finland,gdpr,Europe
+France,gdpr,Europe
+Germany,gdpr,Europe
+Greece,gdpr,Europe
+Hungary,gdpr,Europe
+Ireland,gdpr,Europe
+Italy,gdpr,Europe
+Latvia,gdpr,Europe
+Lithuania,gdpr,Europe
+Luxembourg,gdpr,Europe
+Malta,gdpr,Europe
+Netherlands,gdpr,Europe
+Poland,gdpr,Europe
+Portugal,gdpr,Europe
+Romania,gdpr,Europe
+Slovakia,gdpr,Europe
+Slovenia,gdpr,Europe
+Spain,gdpr,Europe
+Sweden,gdpr,Europe
+Iceland,gdpr,Europe
+Norway,gdpr,Europe
+Liechtenstein,gdpr,Europe
+United Kingdom,uk_dpa,Europe
+Switzerland,fadp,Europe
+Brazil,lgpd,Latin America
+Canada,pipeda,North America
+China,pipl,Asia-Pacific
+Japan,appi,Asia-Pacific
+South Korea,pipa,Asia-Pacific
+Singapore,pdpa_singapore,Asia-Pacific
+India,dpdp_india,Asia-Pacific
+Thailand,pdpa_thailand,Asia-Pacific
+Indonesia,pdpl_indonesia,Asia-Pacific
+Australia,privacy_act_australia,Asia-Pacific
+Vietnam,pdpl_vietnam,Asia-Pacific
+Philippines,dpa_philippines,Asia-Pacific
+Malaysia,pdpa_malaysia,Asia-Pacific
+New Zealand,privacy_act_nz,Asia-Pacific
+USA-California,ccpa,North America
+USA-Virginia,vcdpa,North America
+USA-Colorado,cpa,North America
+USA-Connecticut,ctdpa,North America
+USA-Utah,ucpa,North America
+USA-Texas,tdpsa,North America
+USA-Florida,fdbr,North America
+USA-Oregon,ocpa,North America
+USA-Montana,mcdpa,North America
+USA-Iowa,icdpa,North America
+USA-Delaware,dpdpa,North America
+USA-Nebraska,nedpa,North America
+USA-New Hampshire,nhpa,North America
+USA-New Jersey,njdpa,North America
+USA-Tennessee,tipa,North America
+USA-Minnesota,mnpa,North America
+USA-Maryland,modpa,North America
+USA-Indiana,incdpa,North America
+USA-Kentucky,kcdpa,North America
+USA-Rhode Island,ridtppa,North America
+Argentina,pdpl_argentina,Latin America
+Chile,pdpl_chile,Latin America
+Uruguay,pdpl_uruguay,Latin America
+Colombia,law1581_colombia,Latin America
+Mexico,lfpdppp_mexico,Latin America
+Peru,pdpl_peru,Latin America
+Costa Rica,pdpl_costarica,Latin America
+United Arab Emirates,pdpl_uae,Middle East
+Saudi Arabia,pdpl_saudi,Middle East
+Turkey,kvkk_turkey,Middle East
+Israel,ppl_israel,Middle East
+Qatar,pdpl_qatar,Middle East
+Bahrain,pdpl_bahrain,Middle East
+Oman,pdpl_oman,Middle East
+South Africa,popia,Africa
+Kenya,dpa_kenya,Africa
+Nigeria,ndpa_nigeria,Africa
+Ghana,dpa_ghana,Africa
+Uganda,pdpl_uganda,Africa
+Rwanda,pdpl_rwanda,Africa
+Tanzania,dppl_tanzania,Africa
+Mauritius,dpa_mauritius,Africa
+Tunisia,odpp_tunisia,Africa
+Senegal,pdpl_senegal,Africa
+Benin,pdpl_benin,Africa
+Mali,pdpl_mali,Africa
+Burkina Faso,pdpl_burkina,Africa
+Ivory Coast,pdpl_ivory,Africa
+Cameroon,pdpl_cameroon,Africa
+Honduras,notify_only,Other
+Nicaragua,notify_only,Other
+El Salvador,notify_only,Other
+Guatemala,notify_only,Other
+Belize,notify_only,Other
+Panama,notify_only,Other
+Jamaica,notify_only,Other
+Trinidad and Tobago,notify_only,Other
+Bahamas,notify_only,Other
+Barbados,notify_only,Other
+Haiti,notify_only,Other
+Dominican Republic,notify_only,Other
+Ecuador,notify_only,Other
+Bolivia,notify_only,Other
+Paraguay,notify_only,Other
+Venezuela,notify_only,Other
+Guyana,notify_only,Other
+Suriname,notify_only,Other
+Egypt,notify_only,Other
+Morocco,notify_only,Other
+Algeria,notify_only,Other
+Libya,notify_only,Other
+Sudan,notify_only,Other
+Ethiopia,notify_only,Other
+Angola,notify_only,Other
+Mozambique,notify_only,Other
+Madagascar,notify_only,Other
+Zambia,notify_only,Other
+Zimbabwe,notify_only,Other
+Botswana,notify_only,Other
+Namibia,notify_only,Other
+Malawi,notify_only,Other
+Congo,notify_only,Other
+Jordan,notify_only,Other
+Lebanon,notify_only,Other
+Iraq,notify_only,Other
+Kuwait,notify_only,Other
+Yemen,notify_only,Other
+Afghanistan,notify_only,Other
+Pakistan,notify_only,Other
+Bangladesh,notify_only,Other
+Myanmar,notify_only,Other
+Cambodia,notify_only,Other
+Laos,notify_only,Other
+Mongolia,notify_only,Other
+Nepal,notify_only,Other
+Sri Lanka,notify_only,Other
+Kazakhstan,notify_only,Other
+Uzbekistan,notify_only,Other
+Turkmenistan,notify_only,Other
+Kyrgyzstan,notify_only,Other
+Tajikistan,notify_only,Other
+Papua New Guinea,notify_only,Other
+Fiji,notify_only,Other
+Solomon Islands,notify_only,Other
+Samoa,notify_only,Other
+Serbia,notify_only,Other
+Bosnia,notify_only,Other
+Albania,notify_only,Other
+North Macedonia,notify_only,Other
+Moldova,notify_only,Other
+Ukraine,notify_only,Other
+Belarus,notify_only,Other

@@ -9,6 +9,8 @@ export { CapabilityMatrix } from "./CapabilityMatrix";
 export { TechStack } from "./TechStack";
 export { AIActCompliance } from "./AIActCompliance";
 export { Regulations } from "./Regulations";
+export { ComplianceDatabase } from "./ComplianceDatabase";
+export { ComplianceDropdowns } from "./ComplianceDropdowns";
 export { Resources } from "./Resources";
 export { WhyUs } from "./WhyUs";
 export { Contact } from "./Contact";

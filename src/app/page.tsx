@@ -10,6 +10,7 @@ import {
   TechStack,
   AIActCompliance,
   Regulations,
+  ComplianceDatabase,
   Resources,
   WhyUs,
   Contact,
@@ -23,6 +24,7 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
+        <ComplianceDatabase />
         <Pillars />
         <AnalyticsComparison />
         <ServerSideStats />

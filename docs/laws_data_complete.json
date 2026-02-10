@@ -1,0 +1,2806 @@
+[
+  {
+    "law_id": "gdpr",
+    "law_name": "GDPR",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 16,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "consent_refresh_required": "yes",
+    "consent_refresh_days": 365,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 4,
+    "max_fine_absolute_usd": 20000000,
+    "enforcement_likelihood": "high"
+  },
+  {
+    "law_id": "lgpd",
+    "law_name": "LGPD (Brazil)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "consent_refresh_required": "yes",
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 2,
+    "max_fine_absolute_usd": 9600000,
+    "enforcement_likelihood": "medium",
+    "notes": "Performance/analytics can use legitimate interest if no behavioral profiling"
+  },
+  {
+    "law_id": "ccpa",
+    "law_name": "CCPA/CPRA (California)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "high"
+  },
+  {
+    "law_id": "pipeda",
+    "law_name": "PIPEDA (Canada)",
+    "consent_model": "IMPLIED_CONSENT",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 1,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "limited",
+      "right_to_portability": "no",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "notes": "Can use implied consent for less sensitive data. Behavioral advertising requires explicit consent. Performance/analytics context-dependent."
+  },
+  {
+    "law_id": "vcdpa",
+    "law_name": "VCDPA (Virginia)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Requires opt-in for sensitive data (unique among US states)"
+  },
+  {
+    "law_id": "cpa",
+    "law_name": "CPA (Colorado)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 20000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Must honor GPC. Opt-in for sensitive data."
+  },
+  {
+    "law_id": "ctdpa",
+    "law_name": "CTDPA (Connecticut)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 5000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Most consumer-friendly US state law. Opt-in for sensitive data."
+  },
+  {
+    "law_id": "ucpa",
+    "law_name": "UCPA (Utah)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "limited",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no",
+    "notes": "Most business-friendly. Only opt-out for sensitive. No correction right."
+  },
+  {
+    "law_id": "tdpsa",
+    "law_name": "TDPSA (Texas)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no",
+    "notes": "Similar to CCPA model"
+  },
+  {
+    "law_id": "fdbr",
+    "law_name": "FDBR (Florida)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no",
+    "notes": "Higher penalties than most US states"
+  },
+  {
+    "law_id": "ocpa",
+    "law_name": "OCPA (Oregon)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Opt-in for sensitive data"
+  },
+  {
+    "law_id": "mcdpa",
+    "law_name": "MCDPA (Montana)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no",
+    "notes": "Standard US state opt-out model"
+  },
+  {
+    "law_id": "pipl",
+    "law_name": "PIPL (China)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 14,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 5,
+    "max_fine_absolute_usd": 7000000,
+    "enforcement_likelihood": "high",
+    "sensitive_data_extra_consent": "yes",
+    "child_data_parental_consent": "yes",
+    "notes": "Minors under 14 require parental consent. Separate consent required for sensitive data. Data localization requirements."
+  },
+  {
+    "law_id": "uk_dpa",
+    "law_name": "UK DPA",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "consent_refresh_required": "yes",
+    "consent_refresh_days": 365,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 4,
+    "max_fine_absolute_usd": 22000000,
+    "enforcement_likelihood": "high",
+    "sensitive_data_extra_consent": "yes",
+    "child_data_parental_consent": "yes",
+    "notes": "Post-Brexit UK GDPR. Age of consent lowered from 16 to 13."
+  },
+  {
+    "law_id": "appi",
+    "law_name": "APPI (Japan)",
+    "consent_model": "IMPLIED_CONSENT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "limited",
+      "right_to_portability": "no",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 1000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "child_data_parental_consent": "yes",
+    "notes": "Hybrid model. Opt-in for sensitive data and third-party transfers. General data can use implied consent. Minors 12-18 need parental consent."
+  },
+  {
+    "law_id": "pipa",
+    "law_name": "PIPA (South Korea)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 3,
+    "max_fine_absolute_usd": 390000,
+    "enforcement_likelihood": "high",
+    "sensitive_data_extra_consent": "yes",
+    "child_data_parental_consent": "yes",
+    "notes": "One of strictest in Asia. Explicit opt-in required. EU adequacy decision. Very similar to GDPR."
+  },
+  {
+    "law_id": "pdpa_singapore",
+    "law_name": "PDPA (Singapore)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_percentage_revenue": 10,
+    "max_fine_absolute_usd": 1000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Shifted from consent-based to allowing legitimate interests. Highest fine percentage (10%) among APAC. Business contact info excluded."
+  },
+  {
+    "law_id": "notify_only",
+    "law_name": "No Specific Privacy Law",
+    "consent_model": "NOTIFY_ONLY",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "no",
+    "reject_button_required": "no",
+    "settings_button_required": "no",
+    "age_of_consent": null,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "functional": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "targeting": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      }
+    },
+    "user_rights": {
+      "right_to_access": "no",
+      "right_to_deletion": "no",
+      "right_to_portability": "no",
+      "right_to_object": "no"
+    },
+    "notes": "Default template for countries without comprehensive privacy legislation"
+  },
+  {
+    "law_id": "icdpa",
+    "law_name": "ICDPA (Iowa)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "dpdpa",
+    "law_name": "DPDPA (Delaware)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 10000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "nedpa",
+    "law_name": "NEDPA (Nebraska)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "nhpa",
+    "law_name": "NHPA (New Hampshire)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 10000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "njdpa",
+    "law_name": "NJDPA (New Jersey)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 10000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "tipa",
+    "law_name": "TIPA (Tennessee)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "mnpa",
+    "law_name": "MNPA (Minnesota)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "modpa",
+    "law_name": "MODPA (Maryland)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 10000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "incdpa",
+    "law_name": "INCDPA (Indiana)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "kcdpa",
+    "law_name": "KCDPA (Kentucky)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "ridtppa",
+    "law_name": "RIDTPPA (Rhode Island)",
+    "consent_model": "OPT_OUT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "no"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 7500,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "no"
+  },
+  {
+    "law_id": "fadp",
+    "law_name": "FADP (Switzerland)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 300000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes"
+  },
+  {
+    "law_id": "dpdp_india",
+    "law_name": "DPDP (India)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 4000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2023 law. Explicit consent required. Data fiduciary obligations."
+  },
+  {
+    "law_id": "pdpa_thailand",
+    "law_name": "PDPA (Thailand)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 10,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 5000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Age 10 - lowest globally. GDPR-inspired."
+  },
+  {
+    "law_id": "pdpl_indonesia",
+    "law_name": "PDPL (Indonesia)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 1000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2022 law. Large population 275M."
+  },
+  {
+    "law_id": "privacy_act_australia",
+    "law_name": "Privacy Act (Australia)",
+    "consent_model": "IMPLIED_CONSENT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "limited"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 2000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Under reform. Currently allows implied consent."
+  },
+  {
+    "law_id": "pdpl_vietnam",
+    "law_name": "PDPL (Vietnam)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 16,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2021 law. Consent-based."
+  },
+  {
+    "law_id": "dpa_philippines",
+    "law_name": "DPA (Philippines)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 500000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2012 law. Established framework."
+  },
+  {
+    "law_id": "pdpa_malaysia",
+    "law_name": "PDPA (Malaysia)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 500000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2010 law. Business hub."
+  },
+  {
+    "law_id": "privacy_act_nz",
+    "law_name": "Privacy Act (New Zealand)",
+    "consent_model": "IMPLIED_CONSENT",
+    "cookie_blocking_required": "no",
+    "granular_consent_required": "yes",
+    "reject_button_required": "no",
+    "settings_button_required": "yes",
+    "age_of_consent": 16,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "limited"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "enabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 10000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Less stringent than GDPR."
+  },
+  {
+    "law_id": "pdpl_argentina",
+    "law_name": "PDPL (Argentina)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "EU adequacy decision"
+  },
+  {
+    "law_id": "pdpl_chile",
+    "law_name": "PDPL (Chile)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 14,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 150000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "EU adequacy decision"
+  },
+  {
+    "law_id": "pdpl_uruguay",
+    "law_name": "PDPL (Uruguay)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 200000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "EU adequacy decision"
+  },
+  {
+    "law_id": "law1581_colombia",
+    "law_name": "Law 1581 (Colombia)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 2000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Established 2012"
+  },
+  {
+    "law_id": "lfpdppp_mexico",
+    "law_name": "LFPDPPP (Mexico)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 300000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Federal law"
+  },
+  {
+    "law_id": "pdpl_peru",
+    "law_name": "PDPL (Peru)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 14,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "LGPD-inspired"
+  },
+  {
+    "law_id": "pdpl_costarica",
+    "law_name": "PDPL (Costa Rica)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "limited"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 2,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "yes",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2011 law"
+  },
+  {
+    "law_id": "pdpl_uae",
+    "law_name": "PDPL (UAE)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 21,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 1000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Business hub. Age 21 unique"
+  },
+  {
+    "law_id": "pdpl_saudi",
+    "law_name": "PDPL (Saudi Arabia)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 3000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Large economy"
+  },
+  {
+    "law_id": "kvkk_turkey",
+    "law_name": "KVKK (Turkey)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 1000000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "EU candidate. GDPR-inspired"
+  },
+  {
+    "law_id": "ppl_israel",
+    "law_name": "PPL (Israel)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 300000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Tech hub. Established law"
+  },
+  {
+    "law_id": "pdpl_qatar",
+    "law_name": "PDPL (Qatar)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 500000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2021 law"
+  },
+  {
+    "law_id": "pdpl_bahrain",
+    "law_name": "PDPL (Bahrain)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 200000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Financial hub"
+  },
+  {
+    "law_id": "pdpl_oman",
+    "law_name": "PDPL (Oman)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "2022 law"
+  },
+  {
+    "law_id": "popia",
+    "law_name": "POPIA (South Africa)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 280000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Age 18. Comprehensive framework"
+  },
+  {
+    "law_id": "dpa_kenya",
+    "law_name": "DPA (Kenya)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 300000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Leading African framework"
+  },
+  {
+    "law_id": "ndpa_nigeria",
+    "law_name": "NDPA (Nigeria)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 13,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 150000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Largest African economy. 2% revenue fine"
+  },
+  {
+    "law_id": "dpa_ghana",
+    "law_name": "DPA (Ghana)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Strong framework"
+  },
+  {
+    "law_id": "pdpl_uganda",
+    "law_name": "PDPL (Uganda)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "East Africa"
+  },
+  {
+    "law_id": "pdpl_rwanda",
+    "law_name": "PDPL (Rwanda)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Tech-forward"
+  },
+  {
+    "law_id": "dppl_tanzania",
+    "law_name": "DPPL (Tanzania)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "East Africa"
+  },
+  {
+    "law_id": "dpa_mauritius",
+    "law_name": "DPA (Mauritius)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Business hub"
+  },
+  {
+    "law_id": "odpp_tunisia",
+    "law_name": "ODPP (Tunisia)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 100000,
+    "enforcement_likelihood": "medium",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "North Africa"
+  },
+  {
+    "law_id": "pdpl_senegal",
+    "law_name": "PDPL (Senegal)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "West Africa"
+  },
+  {
+    "law_id": "pdpl_benin",
+    "law_name": "DPPL (Benin)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 30000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "West Africa"
+  },
+  {
+    "law_id": "pdpl_mali",
+    "law_name": "PDPL (Mali)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 30000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "West Africa"
+  },
+  {
+    "law_id": "pdpl_burkina",
+    "law_name": "PDPL (Burkina Faso)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 30000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "West Africa"
+  },
+  {
+    "law_id": "pdpl_ivory",
+    "law_name": "PDPL (Ivory Coast)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "West Africa"
+  },
+  {
+    "law_id": "pdpl_cameroon",
+    "law_name": "PDPL (Cameroon)",
+    "consent_model": "OPT_IN",
+    "cookie_blocking_required": "yes",
+    "granular_consent_required": "yes",
+    "reject_button_required": "yes",
+    "settings_button_required": "yes",
+    "age_of_consent": 18,
+    "cookie_categories": {
+      "strictly_necessary": {
+        "user_can_control": "no",
+        "default_state": "enabled"
+      },
+      "performance": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "functional": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      },
+      "targeting": {
+        "user_can_control": "yes",
+        "default_state": "disabled",
+        "consent_required": "yes"
+      }
+    },
+    "consent_proof_retention_years": 3,
+    "user_rights": {
+      "right_to_access": "yes",
+      "right_to_deletion": "yes",
+      "right_to_portability": "limited",
+      "right_to_object": "yes"
+    },
+    "max_fine_absolute_usd": 50000,
+    "enforcement_likelihood": "low",
+    "sensitive_data_extra_consent": "yes",
+    "notes": "Central Africa"
+  }
+]
