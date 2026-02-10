@@ -1,8 +1,6 @@
 "use client";
 
 import { CircularProgress, ComparisonChart } from "@/components/charts";
-import { serverSideStats } from "@/data/content";
-import { Server, Zap, Shield, Users } from "lucide-react";
 
 export function ServerSideStats() {
   return (

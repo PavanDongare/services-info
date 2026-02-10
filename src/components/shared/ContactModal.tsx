@@ -67,7 +67,7 @@ export function ContactModal({ trigger, open, onOpenChange }: ContactModalProps)
                             Request Sent!
                         </h3>
                         <p className="text-muted-foreground mb-6">
-                            We'll be in touch shortly to schedule your demo.
+                            We&apos;ll be in touch shortly to schedule your demo.
                         </p>
                         <Button
                             className="w-full"

@@ -1,18 +1,8 @@
 import Link from "next/link";
 import { getAllLaws, getAllCountries } from "@/lib/compliance";
-import { Database, Shield, Scale, Globe, MapPin, ArrowRight, ChevronDown } from "lucide-react";
+import { Database, Shield, Scale, Globe, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ComplianceDropdowns } from "./ComplianceDropdowns";
-
-const regionColors: Record<string, string> = {
-  Europe: "bg-accent-cyan",
-  "North America": "bg-accent-purple",
-  "Latin America": "bg-accent-green",
-  "Asia-Pacific": "bg-accent-amber",
-  "Middle East": "bg-accent-red",
-  Africa: "bg-accent-purple",
-  Other: "bg-muted-foreground",
-};
 
 export async function ComplianceDatabase() {
   const [laws, countries] = await Promise.all([getAllLaws(), getAllCountries()]);

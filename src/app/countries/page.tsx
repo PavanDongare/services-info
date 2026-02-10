@@ -1,5 +1,4 @@
 import { getAllCountries } from "@/lib/compliance";
-import { ConsentBadge } from "@/components/compliance";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Globe, MapPin, ChevronRight, ArrowRight } from "lucide-react";

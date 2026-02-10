@@ -45,7 +45,7 @@ async function seedLaws() {
   const lawsData = JSON.parse(fs.readFileSync(lawsPath, "utf-8"));
 
   // Transform data for insert
-  const laws = lawsData.map((law: any) => ({
+  const laws = lawsData.map((law: Record<string, unknown>) => ({
     law_id: law.law_id,
     law_name: law.law_name,
     consent_model: law.consent_model,
@@ -67,7 +67,7 @@ async function seedLaws() {
     notes: law.notes || null,
   }));
 
-  const { data, error } = await supabase.from("laws").upsert(laws, {
+  const { error } = await supabase.from("laws").upsert(laws, {
     onConflict: "law_id",
   });
 
@@ -94,7 +94,7 @@ async function seedCountries() {
     region: row.region,
   }));
 
-  const { data, error } = await supabase.from("countries").upsert(countries, {
+  const { error } = await supabase.from("countries").upsert(countries, {
     onConflict: "slug",
   });
 
@@ -135,7 +135,7 @@ async function seedComparisons() {
     },
   ];
 
-  const { data, error } = await supabase.from("comparisons").upsert(comparisons, {
+  const { error } = await supabase.from("comparisons").upsert(comparisons, {
     onConflict: "slug",
   });
 

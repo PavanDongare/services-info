@@ -1,7 +1,7 @@
 "use client";
 
 import { RiskPyramid, TimelineChart, BarChart } from "@/components/charts";
-import { aiActRisks, aiActPenalties } from "@/data/content";
+import { aiActRisks } from "@/data/content";
 import { Brain, AlertTriangle, Calendar, Euro } from "lucide-react";
 
 const timelineEvents = [

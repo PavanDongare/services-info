@@ -5,7 +5,6 @@ import { getAllLaws, getLawById, getCountriesByLaw } from "@/lib/compliance";
 import {
   ConsentBadge,
   MetricCard,
-  RightsMatrix,
   CookieRequirements,
   EnforcementBar,
   FineDisplay,

@@ -1,4 +1,3 @@
-import { RegulationBadge } from "@/components/shared";
 import { regulations } from "@/data/content";
 import { Globe } from "lucide-react";
 
