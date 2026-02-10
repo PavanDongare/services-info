@@ -1,0 +1,159 @@
+id,country,slug,law_id,region,created_at
+134,Afghanistan,afghanistan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+154,Albania,albania,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+116,Algeria,algeria,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+120,Angola,angola,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+67,Argentina,argentina,pdpl_argentina,Latin America,2026-02-10T13:14:09.661677+00:00
+42,Australia,australia,privacy_act_australia,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+1,Austria,austria,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+104,Bahamas,bahamas,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+79,Bahrain,bahrain,pdpl_bahrain,Middle East,2026-02-10T13:14:09.661677+00:00
+136,Bangladesh,bangladesh,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+105,Barbados,barbados,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+158,Belarus,belarus,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+2,Belgium,belgium,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+100,Belize,belize,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+91,Benin,benin,pdpl_benin,Africa,2026-02-10T13:14:09.661677+00:00
+109,Bolivia,bolivia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+153,Bosnia,bosnia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+125,Botswana,botswana,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+33,Brazil,brazil,lgpd,Latin America,2026-02-10T13:14:09.661677+00:00
+3,Bulgaria,bulgaria,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+93,Burkina Faso,burkina-faso,pdpl_burkina,Africa,2026-02-10T13:14:09.661677+00:00
+138,Cambodia,cambodia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+95,Cameroon,cameroon,pdpl_cameroon,Africa,2026-02-10T13:14:09.661677+00:00
+34,Canada,canada,pipeda,North America,2026-02-10T13:14:09.661677+00:00
+68,Chile,chile,pdpl_chile,Latin America,2026-02-10T13:14:09.661677+00:00
+35,China,china,pipl,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+70,Colombia,colombia,law1581_colombia,Latin America,2026-02-10T13:14:09.661677+00:00
+128,Congo,congo,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+73,Costa Rica,costa-rica,pdpl_costarica,Latin America,2026-02-10T13:14:09.661677+00:00
+4,Croatia,croatia,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+5,Cyprus,cyprus,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+6,Czech Republic,czech-republic,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+7,Denmark,denmark,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+107,Dominican Republic,dominican-republic,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+108,Ecuador,ecuador,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+114,Egypt,egypt,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+98,El Salvador,el-salvador,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+8,Estonia,estonia,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+119,Ethiopia,ethiopia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+149,Fiji,fiji,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+9,Finland,finland,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+10,France,france,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+11,Germany,germany,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+84,Ghana,ghana,dpa_ghana,Africa,2026-02-10T13:14:09.661677+00:00
+12,Greece,greece,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+99,Guatemala,guatemala,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+112,Guyana,guyana,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+106,Haiti,haiti,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+96,Honduras,honduras,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+13,Hungary,hungary,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+28,Iceland,iceland,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+39,India,india,dpdp_india,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+41,Indonesia,indonesia,pdpl_indonesia,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+131,Iraq,iraq,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+14,Ireland,ireland,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+77,Israel,israel,ppl_israel,Middle East,2026-02-10T13:14:09.661677+00:00
+15,Italy,italy,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+94,Ivory Coast,ivory-coast,pdpl_ivory,Africa,2026-02-10T13:14:09.661677+00:00
+102,Jamaica,jamaica,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+36,Japan,japan,appi,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+129,Jordan,jordan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+143,Kazakhstan,kazakhstan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+82,Kenya,kenya,dpa_kenya,Africa,2026-02-10T13:14:09.661677+00:00
+132,Kuwait,kuwait,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+146,Kyrgyzstan,kyrgyzstan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+139,Laos,laos,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+16,Latvia,latvia,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+130,Lebanon,lebanon,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+117,Libya,libya,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+30,Liechtenstein,liechtenstein,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+17,Lithuania,lithuania,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+18,Luxembourg,luxembourg,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+122,Madagascar,madagascar,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+127,Malawi,malawi,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+45,Malaysia,malaysia,pdpa_malaysia,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+92,Mali,mali,pdpl_mali,Africa,2026-02-10T13:14:09.661677+00:00
+19,Malta,malta,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+88,Mauritius,mauritius,dpa_mauritius,Africa,2026-02-10T13:14:09.661677+00:00
+71,Mexico,mexico,lfpdppp_mexico,Latin America,2026-02-10T13:14:09.661677+00:00
+156,Moldova,moldova,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+140,Mongolia,mongolia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+115,Morocco,morocco,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+121,Mozambique,mozambique,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+137,Myanmar,myanmar,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+126,Namibia,namibia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+141,Nepal,nepal,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+20,Netherlands,netherlands,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+46,New Zealand,new-zealand,privacy_act_nz,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+97,Nicaragua,nicaragua,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+83,Nigeria,nigeria,ndpa_nigeria,Africa,2026-02-10T13:14:09.661677+00:00
+155,North Macedonia,north-macedonia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+29,Norway,norway,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+80,Oman,oman,pdpl_oman,Middle East,2026-02-10T13:14:09.661677+00:00
+135,Pakistan,pakistan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+101,Panama,panama,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+148,Papua New Guinea,papua-new-guinea,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+110,Paraguay,paraguay,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+72,Peru,peru,pdpl_peru,Latin America,2026-02-10T13:14:09.661677+00:00
+44,Philippines,philippines,dpa_philippines,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+21,Poland,poland,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+22,Portugal,portugal,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+78,Qatar,qatar,pdpl_qatar,Middle East,2026-02-10T13:14:09.661677+00:00
+23,Romania,romania,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+86,Rwanda,rwanda,pdpl_rwanda,Africa,2026-02-10T13:14:09.661677+00:00
+151,Samoa,samoa,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+75,Saudi Arabia,saudi-arabia,pdpl_saudi,Middle East,2026-02-10T13:14:09.661677+00:00
+90,Senegal,senegal,pdpl_senegal,Africa,2026-02-10T13:14:09.661677+00:00
+152,Serbia,serbia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+38,Singapore,singapore,pdpa_singapore,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+24,Slovakia,slovakia,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+25,Slovenia,slovenia,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+150,Solomon Islands,solomon-islands,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+81,South Africa,south-africa,popia,Africa,2026-02-10T13:14:09.661677+00:00
+37,South Korea,south-korea,pipa,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+26,Spain,spain,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+142,Sri Lanka,sri-lanka,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+118,Sudan,sudan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+113,Suriname,suriname,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+27,Sweden,sweden,gdpr,Europe,2026-02-10T13:14:09.661677+00:00
+32,Switzerland,switzerland,fadp,Europe,2026-02-10T13:14:09.661677+00:00
+147,Tajikistan,tajikistan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+87,Tanzania,tanzania,dppl_tanzania,Africa,2026-02-10T13:14:09.661677+00:00
+40,Thailand,thailand,pdpa_thailand,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+103,Trinidad and Tobago,trinidad-and-tobago,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+89,Tunisia,tunisia,odpp_tunisia,Africa,2026-02-10T13:14:09.661677+00:00
+76,Turkey,turkey,kvkk_turkey,Middle East,2026-02-10T13:14:09.661677+00:00
+145,Turkmenistan,turkmenistan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+85,Uganda,uganda,pdpl_uganda,Africa,2026-02-10T13:14:09.661677+00:00
+157,Ukraine,ukraine,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+74,United Arab Emirates,united-arab-emirates,pdpl_uae,Middle East,2026-02-10T13:14:09.661677+00:00
+31,United Kingdom,united-kingdom,uk_dpa,Europe,2026-02-10T13:14:09.661677+00:00
+69,Uruguay,uruguay,pdpl_uruguay,Latin America,2026-02-10T13:14:09.661677+00:00
+47,USA-California,usa-california,ccpa,North America,2026-02-10T13:14:09.661677+00:00
+49,USA-Colorado,usa-colorado,cpa,North America,2026-02-10T13:14:09.661677+00:00
+50,USA-Connecticut,usa-connecticut,ctdpa,North America,2026-02-10T13:14:09.661677+00:00
+57,USA-Delaware,usa-delaware,dpdpa,North America,2026-02-10T13:14:09.661677+00:00
+53,USA-Florida,usa-florida,fdbr,North America,2026-02-10T13:14:09.661677+00:00
+64,USA-Indiana,usa-indiana,incdpa,North America,2026-02-10T13:14:09.661677+00:00
+56,USA-Iowa,usa-iowa,icdpa,North America,2026-02-10T13:14:09.661677+00:00
+65,USA-Kentucky,usa-kentucky,kcdpa,North America,2026-02-10T13:14:09.661677+00:00
+63,USA-Maryland,usa-maryland,modpa,North America,2026-02-10T13:14:09.661677+00:00
+62,USA-Minnesota,usa-minnesota,mnpa,North America,2026-02-10T13:14:09.661677+00:00
+55,USA-Montana,usa-montana,mcdpa,North America,2026-02-10T13:14:09.661677+00:00
+58,USA-Nebraska,usa-nebraska,nedpa,North America,2026-02-10T13:14:09.661677+00:00
+59,USA-New Hampshire,usa-new-hampshire,nhpa,North America,2026-02-10T13:14:09.661677+00:00
+60,USA-New Jersey,usa-new-jersey,njdpa,North America,2026-02-10T13:14:09.661677+00:00
+54,USA-Oregon,usa-oregon,ocpa,North America,2026-02-10T13:14:09.661677+00:00
+66,USA-Rhode Island,usa-rhode-island,ridtppa,North America,2026-02-10T13:14:09.661677+00:00
+61,USA-Tennessee,usa-tennessee,tipa,North America,2026-02-10T13:14:09.661677+00:00
+52,USA-Texas,usa-texas,tdpsa,North America,2026-02-10T13:14:09.661677+00:00
+51,USA-Utah,usa-utah,ucpa,North America,2026-02-10T13:14:09.661677+00:00
+48,USA-Virginia,usa-virginia,vcdpa,North America,2026-02-10T13:14:09.661677+00:00
+144,Uzbekistan,uzbekistan,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+111,Venezuela,venezuela,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+43,Vietnam,vietnam,pdpl_vietnam,Asia-Pacific,2026-02-10T13:14:09.661677+00:00
+133,Yemen,yemen,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+123,Zambia,zambia,notify_only,Other,2026-02-10T13:14:09.661677+00:00
+124,Zimbabwe,zimbabwe,notify_only,Other,2026-02-10T13:14:09.661677+00:00

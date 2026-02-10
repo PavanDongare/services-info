@@ -1,0 +1,13 @@
+id,law1_id,law2_id,slug,priority,created_at
+1,gdpr,ccpa,gdpr-vs-ccpa,10,2026-02-10T13:14:09.766895+00:00
+2,gdpr,lgpd,gdpr-vs-lgpd,9,2026-02-10T13:14:09.766895+00:00
+3,gdpr,uk_dpa,gdpr-vs-uk-dpa,8,2026-02-10T13:14:09.766895+00:00
+4,gdpr,pipl,gdpr-vs-pipl,7,2026-02-10T13:14:09.766895+00:00
+5,ccpa,vcdpa,ccpa-vs-vcdpa,6,2026-02-10T13:14:09.766895+00:00
+6,ccpa,cpa,ccpa-vs-cpa,5,2026-02-10T13:14:09.766895+00:00
+7,lgpd,ccpa,lgpd-vs-ccpa,4,2026-02-10T13:14:09.766895+00:00
+8,gdpr,pipeda,gdpr-vs-pipeda,3,2026-02-10T13:14:09.766895+00:00
+9,pipl,ccpa,pipl-vs-ccpa,2,2026-02-10T13:14:09.766895+00:00
+10,gdpr,pipa,gdpr-vs-pipa,1,2026-02-10T13:14:09.766895+00:00
+11,gdpr,pdpa_singapore,gdpr-vs-pdpa-singapore,1,2026-02-10T13:14:09.766895+00:00
+12,ccpa,tdpsa,ccpa-vs-tdpsa,1,2026-02-10T13:14:09.766895+00:00
