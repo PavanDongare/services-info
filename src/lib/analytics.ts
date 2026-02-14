@@ -75,7 +75,7 @@ export async function trackPageView(path: string) {
     }
 
     const { error } = await supabase
-      .from('page_views')
+      .from('compliance.page_views')
       .insert([pageView])
 
     if (error) {
@@ -97,7 +97,7 @@ export async function trackEvent(eventName: string, eventData?: Record<string, a
     const language = navigator.language || null
 
     const { error } = await supabase
-      .from('analytics_events')
+      .from('compliance.analytics_events')
       .insert([{
         event_name: eventName,
         event_data: eventData || {},
@@ -132,7 +132,7 @@ function parseBrowser(userAgent: string) {
       browserVersion: result.browser.version || null,
       osName: result.os.name || null,
       osVersion: result.os.version || null,
-      deviceName: result.device.name || null,
+      deviceName: result.device.model || null,
     }
   } catch {
     return {
