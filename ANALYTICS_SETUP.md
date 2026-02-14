@@ -9,15 +9,42 @@ This project includes built-in analytics tracking to monitor traffic and user be
 Go to your Supabase dashboard and run the following SQL in the SQL editor:
 
 ```sql
--- Create page_views table
+-- Create page_views table with detailed tracking
 CREATE TABLE IF NOT EXISTS public.page_views (
   id BIGSERIAL PRIMARY KEY,
   path TEXT NOT NULL,
   referrer TEXT,
+  referrer_source TEXT,
   user_agent TEXT,
   timestamp TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+
+  -- Location & Geography
   country TEXT,
+  city TEXT,
+  region TEXT,
+  latitude DECIMAL(10, 8),
+  longitude DECIMAL(11, 8),
+  timezone TEXT,
+
+  -- Device Information
   device_type TEXT CHECK (device_type IN ('mobile', 'tablet', 'desktop')),
+  device_name TEXT,
+  browser_name TEXT,
+  browser_version TEXT,
+  os_name TEXT,
+  os_version TEXT,
+  screen_width INTEGER,
+  screen_height INTEGER,
+
+  -- Network & Language
+  language TEXT,
+  connection_type TEXT,
+
+  -- Campaign Tracking
+  utm_source TEXT,
+  utm_medium TEXT,
+  utm_campaign TEXT,
+
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
@@ -27,6 +54,15 @@ CREATE TABLE IF NOT EXISTS public.analytics_events (
   event_name TEXT NOT NULL,
   event_data JSONB,
   user_agent TEXT,
+
+  -- Device & Location
+  device_type TEXT,
+  browser_name TEXT,
+  os_name TEXT,
+  country TEXT,
+  city TEXT,
+  language TEXT,
+
   timestamp TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
@@ -34,8 +70,14 @@ CREATE TABLE IF NOT EXISTS public.analytics_events (
 -- Add indexes for better query performance
 CREATE INDEX idx_page_views_timestamp ON public.page_views(timestamp);
 CREATE INDEX idx_page_views_path ON public.page_views(path);
+CREATE INDEX idx_page_views_country ON public.page_views(country);
+CREATE INDEX idx_page_views_device_type ON public.page_views(device_type);
+CREATE INDEX idx_page_views_browser ON public.page_views(browser_name);
+CREATE INDEX idx_page_views_os ON public.page_views(os_name);
+CREATE INDEX idx_page_views_referrer_source ON public.page_views(referrer_source);
 CREATE INDEX idx_analytics_events_timestamp ON public.analytics_events(timestamp);
 CREATE INDEX idx_analytics_events_name ON public.analytics_events(event_name);
+CREATE INDEX idx_analytics_events_country ON public.analytics_events(country);
 
 -- Enable row level security (optional but recommended)
 ALTER TABLE public.page_views ENABLE ROW LEVEL SECURITY;
@@ -51,12 +93,31 @@ CREATE POLICY "Allow public inserts" ON public.analytics_events
 
 ### 2. That's it!
 
-The analytics tracker is now active. It will automatically:
-- Track all page views
-- Capture referrer information
-- Detect device type (mobile/tablet/desktop)
-- Get approximate geolocation from IP
-- Store all data in Supabase
+The analytics tracker is now active. It will automatically track all page views with:
+
+**Device & Browser:**
+- Browser name and version
+- Operating system and version
+- Device name/model
+- Device type (mobile/tablet/desktop)
+- Screen resolution
+
+**Location:**
+- Country, city, and region
+- Latitude/longitude (approximate)
+- Timezone
+
+**Traffic Source:**
+- Referrer URL and source (Google, Facebook, direct, etc.)
+- UTM parameters (utm_source, utm_medium, utm_campaign)
+
+**Network & Language:**
+- User's language preference
+- Connection type (4G, WiFi, etc.)
+
+**User Agent & Custom Data:**
+- Full user agent string
+- Custom event data tracking
 
 ## Using Analytics
 
@@ -93,45 +154,133 @@ WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY path
 ORDER BY views DESC;
 
--- Top referrers
+-- Top referrer sources (Google, Facebook, direct, etc.)
 SELECT
-  referrer,
+  referrer_source,
   COUNT(*) as count
 FROM public.page_views
-WHERE referrer IS NOT NULL
+WHERE referrer_source IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
-GROUP BY referrer
-ORDER BY count DESC
-LIMIT 10;
+GROUP BY referrer_source
+ORDER BY count DESC;
 
--- Device distribution
+-- Browser usage statistics
+SELECT
+  browser_name,
+  browser_version,
+  COUNT(*) as count
+FROM public.page_views
+WHERE browser_name IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY browser_name, browser_version
+ORDER BY count DESC;
+
+-- Operating system distribution
+SELECT
+  os_name,
+  os_version,
+  COUNT(*) as count
+FROM public.page_views
+WHERE os_name IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY os_name, os_version
+ORDER BY count DESC;
+
+-- Device distribution (mobile, tablet, desktop)
 SELECT
   device_type,
-  COUNT(*) as count
+  COUNT(*) as count,
+  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) as percentage
 FROM public.page_views
 WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY device_type;
 
--- Geographic distribution
+-- Screen resolution popularity
+SELECT
+  CONCAT(screen_width, 'x', screen_height) as resolution,
+  COUNT(*) as count
+FROM public.page_views
+WHERE screen_width IS NOT NULL
+  AND screen_height IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY screen_width, screen_height
+ORDER BY count DESC
+LIMIT 10;
+
+-- Geographic distribution (top 20 countries)
 SELECT
   country,
+  city,
   COUNT(*) as views
 FROM public.page_views
 WHERE country IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
-GROUP BY country
+GROUP BY country, city
 ORDER BY views DESC
 LIMIT 20;
 
--- Custom events
+-- Traffic by timezone
+SELECT
+  timezone,
+  COUNT(*) as views
+FROM public.page_views
+WHERE timezone IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY timezone
+ORDER BY views DESC
+LIMIT 10;
+
+-- UTM campaign performance
+SELECT
+  utm_source,
+  utm_medium,
+  utm_campaign,
+  COUNT(*) as views
+FROM public.page_views
+WHERE utm_source IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY utm_source, utm_medium, utm_campaign
+ORDER BY views DESC;
+
+-- Language distribution
+SELECT
+  language,
+  COUNT(*) as views
+FROM public.page_views
+WHERE language IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY language
+ORDER BY views DESC;
+
+-- Connection type (4G, WiFi, etc.)
+SELECT
+  connection_type,
+  COUNT(*) as views
+FROM public.page_views
+WHERE connection_type IS NOT NULL
+  AND timestamp > NOW() - INTERVAL '7 days'
+GROUP BY connection_type
+ORDER BY views DESC;
+
+-- Custom events by type
 SELECT
   event_name,
-  COUNT(*) as count,
-  timestamp
+  COUNT(*) as count
 FROM public.analytics_events
 WHERE timestamp > NOW() - INTERVAL '7 days'
-GROUP BY event_name, timestamp
-ORDER BY timestamp DESC;
+GROUP BY event_name
+ORDER BY count DESC;
+
+-- Events by browser and OS
+SELECT
+  event_name,
+  browser_name,
+  os_name,
+  COUNT(*) as count
+FROM public.analytics_events
+WHERE timestamp > NOW() - INTERVAL '7 days'
+GROUP BY event_name, browser_name, os_name
+ORDER BY count DESC;
 ```
 
 ## Environment Variables
@@ -147,11 +296,13 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 ## Data Privacy
 
-- Analytics data is stored locally in your Supabase instance
-- No data is sent to third-party services
-- Country is derived from IP using a free geolocation service
-- User agents are stored but not used for tracking individual users
-- No cookies or persistent identifiers are used
+- **Local Storage:** All analytics data is stored exclusively in your Supabase instance
+- **No External Tracking:** No data is sent to Google Analytics, Facebook, or any third-party services
+- **IP Geolocation:** Country, city, and coordinates are derived from IP using a free geolocation API (ipapi.co)
+- **No Personal Data:** No names, emails, or personally identifiable information is collected
+- **No Persistent Identifiers:** Analytics do not use cookies, localStorage, or tracking IDs to identify individual users
+- **GDPR/CCPA Compliant:** The system respects user privacy by design - no persistent tracking across sessions
+- **Device Fingerprinting:** While user agent and device info are stored, they cannot be used to identify individual users across sessions
 
 ## Disabling Analytics
 
