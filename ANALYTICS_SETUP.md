@@ -8,9 +8,22 @@ This project includes built-in analytics tracking to monitor traffic and user be
 
 Go to your Supabase dashboard and run the following SQL in the SQL editor:
 
+**FIRST, clean up old public tables (if you ran the previous version):**
+
 ```sql
+-- Drop public tables if they exist
+DROP TABLE IF EXISTS public.analytics_events CASCADE;
+DROP TABLE IF EXISTS public.page_views CASCADE;
+```
+
+**THEN, create the compliance schema tables:**
+
+```sql
+-- Create compliance schema if it doesn't exist
+CREATE SCHEMA IF NOT EXISTS compliance;
+
 -- Create page_views table with detailed tracking
-CREATE TABLE IF NOT EXISTS public.page_views (
+CREATE TABLE IF NOT EXISTS compliance.page_views (
   id BIGSERIAL PRIMARY KEY,
   path TEXT NOT NULL,
   referrer TEXT,
@@ -49,7 +62,7 @@ CREATE TABLE IF NOT EXISTS public.page_views (
 );
 
 -- Create analytics_events table for custom events
-CREATE TABLE IF NOT EXISTS public.analytics_events (
+CREATE TABLE IF NOT EXISTS compliance.analytics_events (
   id BIGSERIAL PRIMARY KEY,
   event_name TEXT NOT NULL,
   event_data JSONB,
@@ -68,26 +81,26 @@ CREATE TABLE IF NOT EXISTS public.analytics_events (
 );
 
 -- Add indexes for better query performance
-CREATE INDEX idx_page_views_timestamp ON public.page_views(timestamp);
-CREATE INDEX idx_page_views_path ON public.page_views(path);
-CREATE INDEX idx_page_views_country ON public.page_views(country);
-CREATE INDEX idx_page_views_device_type ON public.page_views(device_type);
-CREATE INDEX idx_page_views_browser ON public.page_views(browser_name);
-CREATE INDEX idx_page_views_os ON public.page_views(os_name);
-CREATE INDEX idx_page_views_referrer_source ON public.page_views(referrer_source);
-CREATE INDEX idx_analytics_events_timestamp ON public.analytics_events(timestamp);
-CREATE INDEX idx_analytics_events_name ON public.analytics_events(event_name);
-CREATE INDEX idx_analytics_events_country ON public.analytics_events(country);
+CREATE INDEX idx_page_views_timestamp ON compliance.page_views(timestamp);
+CREATE INDEX idx_page_views_path ON compliance.page_views(path);
+CREATE INDEX idx_page_views_country ON compliance.page_views(country);
+CREATE INDEX idx_page_views_device_type ON compliance.page_views(device_type);
+CREATE INDEX idx_page_views_browser ON compliance.page_views(browser_name);
+CREATE INDEX idx_page_views_os ON compliance.page_views(os_name);
+CREATE INDEX idx_page_views_referrer_source ON compliance.page_views(referrer_source);
+CREATE INDEX idx_analytics_events_timestamp ON compliance.analytics_events(timestamp);
+CREATE INDEX idx_analytics_events_name ON compliance.analytics_events(event_name);
+CREATE INDEX idx_analytics_events_country ON compliance.analytics_events(country);
 
 -- Enable row level security (optional but recommended)
-ALTER TABLE public.page_views ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.analytics_events ENABLE ROW LEVEL SECURITY;
+ALTER TABLE compliance.page_views ENABLE ROW LEVEL SECURITY;
+ALTER TABLE compliance.analytics_events ENABLE ROW LEVEL SECURITY;
 
 -- Create policy to allow inserts from authenticated users (anonymous is OK too)
-CREATE POLICY "Allow public inserts" ON public.page_views
+CREATE POLICY "Allow public inserts" ON compliance.page_views
   FOR INSERT WITH CHECK (true);
 
-CREATE POLICY "Allow public inserts" ON public.analytics_events
+CREATE POLICY "Allow public inserts" ON compliance.analytics_events
   FOR INSERT WITH CHECK (true);
 ```
 
@@ -149,7 +162,7 @@ SELECT
   path,
   COUNT(*) as views,
   COUNT(DISTINCT country) as unique_countries
-FROM public.page_views
+FROM compliance.page_views
 WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY path
 ORDER BY views DESC;
@@ -158,7 +171,7 @@ ORDER BY views DESC;
 SELECT
   referrer_source,
   COUNT(*) as count
-FROM public.page_views
+FROM compliance.page_views
 WHERE referrer_source IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY referrer_source
@@ -169,7 +182,7 @@ SELECT
   browser_name,
   browser_version,
   COUNT(*) as count
-FROM public.page_views
+FROM compliance.page_views
 WHERE browser_name IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY browser_name, browser_version
@@ -180,7 +193,7 @@ SELECT
   os_name,
   os_version,
   COUNT(*) as count
-FROM public.page_views
+FROM compliance.page_views
 WHERE os_name IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY os_name, os_version
@@ -191,7 +204,7 @@ SELECT
   device_type,
   COUNT(*) as count,
   ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) as percentage
-FROM public.page_views
+FROM compliance.page_views
 WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY device_type;
 
@@ -199,7 +212,7 @@ GROUP BY device_type;
 SELECT
   CONCAT(screen_width, 'x', screen_height) as resolution,
   COUNT(*) as count
-FROM public.page_views
+FROM compliance.page_views
 WHERE screen_width IS NOT NULL
   AND screen_height IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
@@ -212,7 +225,7 @@ SELECT
   country,
   city,
   COUNT(*) as views
-FROM public.page_views
+FROM compliance.page_views
 WHERE country IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY country, city
@@ -223,7 +236,7 @@ LIMIT 20;
 SELECT
   timezone,
   COUNT(*) as views
-FROM public.page_views
+FROM compliance.page_views
 WHERE timezone IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY timezone
@@ -236,7 +249,7 @@ SELECT
   utm_medium,
   utm_campaign,
   COUNT(*) as views
-FROM public.page_views
+FROM compliance.page_views
 WHERE utm_source IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY utm_source, utm_medium, utm_campaign
@@ -246,7 +259,7 @@ ORDER BY views DESC;
 SELECT
   language,
   COUNT(*) as views
-FROM public.page_views
+FROM compliance.page_views
 WHERE language IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY language
@@ -256,7 +269,7 @@ ORDER BY views DESC;
 SELECT
   connection_type,
   COUNT(*) as views
-FROM public.page_views
+FROM compliance.page_views
 WHERE connection_type IS NOT NULL
   AND timestamp > NOW() - INTERVAL '7 days'
 GROUP BY connection_type
@@ -266,7 +279,7 @@ ORDER BY views DESC;
 SELECT
   event_name,
   COUNT(*) as count
-FROM public.analytics_events
+FROM compliance.analytics_events
 WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY event_name
 ORDER BY count DESC;
@@ -277,7 +290,7 @@ SELECT
   browser_name,
   os_name,
   COUNT(*) as count
-FROM public.analytics_events
+FROM compliance.analytics_events
 WHERE timestamp > NOW() - INTERVAL '7 days'
 GROUP BY event_name, browser_name, os_name
 ORDER BY count DESC;
