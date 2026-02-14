@@ -166,10 +166,6 @@ export default function AnalyticsDashboard() {
                         borderRadius: '8px',
                       }}
                       labelStyle={{ color: '#fff' }}
-                      formatter={(value: number, name: string, props: any) => [
-                        `${value}`,
-                        props.payload.device_type,
-                      ]}
                     />
                   </PieChart>
                 </ResponsiveContainer>
