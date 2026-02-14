@@ -148,9 +148,6 @@ export default function AnalyticsDashboard() {
                       cx="50%"
                       cy="50%"
                       labelLine={false}
-                      label={({ device_type, count }) =>
-                        `${device_type}: ${count}`
-                      }
                       outerRadius={80}
                       fill="#8884d8"
                       dataKey="count"
@@ -169,6 +166,10 @@ export default function AnalyticsDashboard() {
                         borderRadius: '8px',
                       }}
                       labelStyle={{ color: '#fff' }}
+                      formatter={(value: number, name: string, props: any) => [
+                        `${value}`,
+                        props.payload.device_type,
+                      ]}
                     />
                   </PieChart>
                 </ResponsiveContainer>
