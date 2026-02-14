@@ -9,7 +9,7 @@ import {
   EnforcementBar,
   FineDisplay,
 } from "@/components/compliance";
-import { ChevronRight, Users, Calendar, Globe, ArrowRight } from "lucide-react";
+import { ChevronRight, Calendar, Globe, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PageProps {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${law.law_name} Compliance Guide | Cookie Consent & Privacy Requirements`,
-    description: `Complete ${law.law_name} compliance guide: ${law.consent_model.replace("_", " ")} consent model, age ${law.age_of_consent || "N/A"}, ${fineText} max fines. Cookie blocking, user rights & implementation requirements.`,
+    description: `Complete ${law.law_name} compliance guide: ${law.consent_model.replace("_", " ")} consent model, ${fineText} max fines. Cookie blocking, user rights & implementation requirements.`,
     openGraph: {
       title: `${law.law_name} - Privacy Law Compliance Guide`,
       description: `Everything you need to know about ${law.law_name} compliance`,
@@ -95,13 +95,6 @@ export default async function LawPage({ params }: PageProps) {
               Key Metrics
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <MetricCard
-                icon={Users}
-                value={law.age_of_consent || "N/A"}
-                label="Age of Consent"
-                suffix={law.age_of_consent ? " years" : ""}
-                color="cyan"
-              />
               <MetricCard
                 icon={Calendar}
                 value={law.consent_proof_retention_years || "N/A"}

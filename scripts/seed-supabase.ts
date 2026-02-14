@@ -53,7 +53,6 @@ async function seedLaws() {
     granular_consent_required: law.granular_consent_required,
     reject_button_required: law.reject_button_required,
     settings_button_required: law.settings_button_required,
-    age_of_consent: law.age_of_consent,
     cookie_categories: law.cookie_categories,
     consent_proof_retention_years: law.consent_proof_retention_years,
     consent_refresh_required: law.consent_refresh_required || null,

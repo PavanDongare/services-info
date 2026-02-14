@@ -27,7 +27,6 @@ export interface Law {
   granular_consent_required: string;
   reject_button_required: string;
   settings_button_required: string;
-  age_of_consent: number | null;
   cookie_categories: CookieCategories;
   consent_proof_retention_years: number;
   consent_refresh_required: string | null;

@@ -133,12 +133,6 @@ export default async function PrivacyLawsPage() {
                           )}
                         </div>
                         <div className="flex items-center gap-6 text-sm">
-                          {law.age_of_consent && (
-                            <div className="text-center">
-                              <p className="font-mono font-bold text-foreground">{law.age_of_consent}</p>
-                              <p className="text-xs text-muted-foreground">Age</p>
-                            </div>
-                          )}
                           {law.max_fine_absolute_usd && (
                             <div className="text-center">
                               <p className="font-mono font-bold text-foreground">

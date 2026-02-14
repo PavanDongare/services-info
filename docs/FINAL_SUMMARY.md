@@ -128,14 +128,6 @@ NOTIFY_ONLY (for 63 countries)
 - **IMPLIED_CONSENT**: 4 laws (6%) - Canada, Japan, Australia, NZ
 - **NOTIFY_ONLY**: 1 template (63 countries)
 
-### Age of Consent Range
-- **10**: Thailand (unique!)
-- **13**: UK, Brazil, Canada, most US states, Singapore, Nigeria
-- **14**: China, Chile, Peru
-- **16**: GDPR default, Vietnam, New Zealand
-- **18**: Most of Asia, Africa, Middle East
-- **21**: UAE (unique!)
-
 ### Fine Ranges
 - **Under $100K**: Small African countries, PIPEDA
 - **$100K - $1M**: Most developing markets
@@ -161,7 +153,6 @@ NOTIFY_ONLY (for 63 countries)
 
 ### Data Quality
 ✅ No NULL in required fields
-✅ Age of consent in valid range (10-21)
 ✅ Consent model matches cookie blocking
 ✅ Fines properly formatted
 
@@ -219,10 +210,6 @@ Estimated coverage of global internet users:
 ---
 
 ## 🎨 UNIQUE VALUES DISCOVERED
-
-### New Age Values
-- Age 10 (Thailand) - lowest globally
-- Age 21 (UAE) - highest globally
 
 ### Consent Models in Use
 - OPT_IN: Default for most of world
