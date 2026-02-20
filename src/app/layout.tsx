@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { AnalyticsTracker } from "@/components/analytics-tracker";
 
 export const metadata: Metadata = {
   title: "PrivacyStack | Privacy-First Analytics. Enterprise-Ready.",
@@ -50,7 +49,6 @@ export default function RootLayout({
       <body
         className="antialiased bg-background text-foreground"
       >
-        <AnalyticsTracker />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

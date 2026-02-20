@@ -10,6 +10,7 @@ export const siteConfig = {
 export const navigation = [
   { name: "Services", href: "#services" },
   { name: "Expertise", href: "#expertise" },
+  { name: "Tools", href: "#compliance-tools" },
   { name: "Compliance", href: "#compliance-db" },
   { name: "Resources", href: "#resources" },
   { name: "Contact", href: "#contact" },
