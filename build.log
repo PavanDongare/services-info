@@ -1,0 +1,45 @@
+
+> services-info@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1424.9ms
+  Running TypeScript ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/237) ...
+  Generating static pages using 9 workers (59/237) 
+  Generating static pages using 9 workers (118/237) 
+  Generating static pages using 9 workers (177/237) 
+✓ Generating static pages using 9 workers (237/237) in 2.6s
+  Finalizing page optimization ...
+
+Route (app)                         Revalidate  Expire
+┌ ○ /
+├ ○ /_not-found
+├ ○ /analytics
+├ ○ /compliance-tools
+├ ● /compliance-tools/[slug]
+│ ├ /compliance-tools/onetrust
+│ ├ /compliance-tools/trustarc
+│ ├ /compliance-tools/usercentrics
+│ └ /compliance-tools/osano
+├ ○ /countries                              1h      1y
+├ ● /countries/[slug]                       1h      1y
+│ ├ /countries/afghanistan                  1h      1y
+│ ├ /countries/albania                      1h      1y
+│ ├ /countries/algeria                      1h      1y
+│ └ [+155 more paths]
+├ ○ /privacy-laws                           1h      1y
+└ ● /privacy-laws/[lawId]                   1h      1y
+  ├ /privacy-laws/appi                      1h      1y
+  ├ /privacy-laws/ccpa                      1h      1y
+  ├ /privacy-laws/cpa                       1h      1y
+  └ [+64 more paths]
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
