@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SERVICES-INFO
 
-## Getting Started
+An advanced analytics and compliance dashboard designed to track global privacy laws, service performance, and regulatory data. Built for transparency and data-driven decision-making in the privacy and tech space.
 
-First, run the development server:
+## 🚀 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Global Privacy Law Tracker:** Interactive database of regulations like GDPR, CCPA, and AI Act.
+- **Analytics Dashboard:** Real-time data visualization using Recharts for service metrics.
+- **Compliance Tools:** Automated risk assessment and comparison tools for different legal frameworks.
+- **Country-Specific Data:** Deep-dive analytics and compliance status for over 100 countries.
+- **Theme Support:** Fully responsive design with Dark/Light mode support.
+
+## 🏗️ Technical Architecture
+
+```mermaid
+graph TD
+    A[Next.js App Router] --> B[Supabase Database]
+    A --> C[Recharts Visualization]
+    A --> D[CSV/Data Processing Scripts]
+    B --> E[Privacy Laws & Country Data]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**High-Level Flow:**
+```
+[ Browser ] <────> [ Next.js Frontend ]
+                          │
+            ┌─────────────┴─────────────┐
+            │                           │
+    [ Supabase Auth/DB ]       [ Analytics Engine ]
+            │                           │
+    [ Global Law Data ]        [ Recharts Rendering ]
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend:** Next.js (App Router), TypeScript, Tailwind CSS, Lucide React
+- **Visualization:** Recharts
+- **Backend/Database:** Supabase (PostgreSQL)
+- **UI Components:** Shadcn/ui, Radix UI
 
-## Learn More
+## 🏃 How to Run
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+- Node.js 20+
+- Supabase account (for database features)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/pavandongare/services-info.git
+cd services-info
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
+```
 
-## Deploy on Vercel
+### Environment Setup
+Create a `.env.local` file with your Supabase credentials:
+```
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development
+```bash
+# Run the development server
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Seeding Data
+```bash
+# To seed the database with initial law/country data
+npx tsx src/scripts/seed-supabase.ts
+```
+
+---
+Built with ❤️ by [Pavan Dongare](https://github.com/pavandongare)
